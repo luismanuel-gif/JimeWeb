@@ -223,7 +223,9 @@ button {
 
         display: flex;
 
-        flex-direction: column;
+        flex-direction: row;
+
+        justify-content: center;
 
         align-items: center;
 
@@ -233,15 +235,19 @@ button {
 
     button {
 
-        width: 100%;
+        width: auto;
 
-        max-width: 300px;
+        max-width: none;
 
-        padding: 14px 20px;
+        padding: 10px 16px;
 
-        margin: 5px 0;
+        margin: 5px 2px;
 
-        font-size: 16px;
+        font-size: 13px;
+
+        border-radius: 10px;
+
+        white-space: nowrap;
 
     }
 
@@ -289,6 +295,24 @@ button {
     .pregunta h2 {
 
         font-size: 18px;
+
+    }
+
+    .botones {
+
+        gap: 3px;
+
+    }
+
+    button {
+
+        padding: 9px 12px;
+
+        margin: 4px 1px;
+
+        font-size: 12px;
+
+        border-radius: 9px;
 
     }
 

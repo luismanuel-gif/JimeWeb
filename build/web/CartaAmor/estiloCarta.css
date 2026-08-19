@@ -223,7 +223,9 @@ button {
 
         display: flex;
 
-        flex-direction: column;
+        flex-direction: row;
+
+        justify-content: center;
 
         align-items: center;
 
@@ -233,15 +235,19 @@ button {
 
     button {
 
-        width: 100%;
+        width: auto;
 
-        max-width: 300px;
+        max-width: none;
 
-        padding: 14px 20px;
+        padding: 10px 16px;
 
-        margin: 5px 0;
+        margin: 5px 2px;
 
-        font-size: 16px;
+        font-size: 13px;
+
+        border-radius: 10px;
+
+        white-space: nowrap;
 
     }
 
@@ -292,32 +298,22 @@ button {
 
     }
 
-}
-
-@media (max-width: 600px) {
-
     .botones {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
 
-    #no {
-        order: 1;
-    }
+        gap: 3px;
 
-    #si {
-        order: 2;
     }
 
     button {
-        width: 100%;
-        max-width: 300px;
-        padding: 14px 20px;
-        margin: 0;
-        font-size: 16px;
+
+        padding: 9px 12px;
+
+        margin: 4px 1px;
+
+        font-size: 12px;
+
+        border-radius: 9px;
+
     }
 
 }
