@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+}
+
+.contenedor {
+
+    width: 100%;
+    max-width: 750px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
+
+    text-align: center;
+
+}
+
+.corazon {
+
+    font-size: 70px;
+
+    animation: latido .8s infinite alternate;
+
+}
+
+@keyframes latido {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.15);
+    }
+
+}
+
+h1 {
+
+    margin: 20px 0;
+
+    color: #d6336c;
+
+}
+
+.carta {
+
+    text-align: justify;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-top: 30px;
+
+}
+
+.firma {
+
+    text-align: right;
+
+    margin-top: 30px;
+
+}
+
+.pregunta {
+
+    margin-top: 50px;
+
+    color: #c2185b;
+
+}
+
+.botones {
+
+    margin-top: 25px;
+
+}
+
+button {
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: .3s;
+
+}
+
+#si {
+
+    background: #ff4d6d;
+
+    color: white;
+
+}
+
+#si:hover {
+
+    transform: scale(1.08);
+
+}
+
+#no {
+
+    background: #6c757d;
+
+    color: white;
+
+    transition: .2s;
+
+    user-select: none;
+
+}
+
+#no:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+/* =================================
+   ADAPTACIÓN PARA CELULARES
+   ================================= */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 15px;
+
+        align-items: flex-start;
+
+    }
+
+    .contenedor {
+
+        width: 100%;
+
+        padding: 25px 20px;
+
+        border-radius: 16px;
+
+        margin-top: 15px;
+
+    }
+
+    .corazon {
+
+        font-size: 50px;
+
+    }
+
+    h1 {
+
+        font-size: 24px;
+
+        margin: 15px 0;
+
+    }
+
+    .carta {
+
+        font-size: 16px;
+
+        line-height: 1.6;
+
+        margin-top: 20px;
+
+    }
+
+    .firma {
+
+        margin-top: 25px;
+
+    }
+
+    .pregunta {
+
+        margin-top: 35px;
+
+    }
+
+    .pregunta h2 {
+
+        font-size: 20px;
+
+    }
+
+    .botones {
+
+        margin-top: 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 5px;
+
+    }
+
+    button {
+
+        width: 100%;
+
+        max-width: 300px;
+
+        padding: 14px 20px;
+
+        margin: 5px 0;
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/* =================================
+   CELULARES MUY PEQUEÑOS
+   ================================= */
+
+@media (max-width: 380px) {
+
+    body {
+
+        padding: 10px;
+
+    }
+
+    .contenedor {
+
+        padding: 20px 15px;
+
+    }
+
+    .corazon {
+
+        font-size: 42px;
+
+    }
+
+    h1 {
+
+        font-size: 21px;
+
+    }
+
+    .carta {
+
+        font-size: 15px;
+
+        line-height: 1.55;
+
+    }
+
+    .pregunta h2 {
+
+        font-size: 18px;
+
+    }
+
+}
