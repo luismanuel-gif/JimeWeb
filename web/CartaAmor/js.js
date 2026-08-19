@@ -5,7 +5,7 @@ const botonNo = document.getElementById("no");
 
 // Si le gustó
 botonSi.addEventListener("click", () => {
-    window.location.href = "https://youtu.be/s62trykMZGg?si=tMZL5NLknajksMF3";
+    window.location.href = "https://youtu.be/s62trykMZGg?si=ApMarI3mZX7ui6xq&t=52";
 });
 
 // Hacemos que el botón "No me gustó" huya
