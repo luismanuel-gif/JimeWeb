@@ -3,14 +3,15 @@
 const botonSi = document.getElementById("si");
 const botonNo = document.getElementById("no");
 
+// Hacemos que el botón "No me gustó" huya
+botonNo.addEventListener("mouseover", moverBoton);
+botonNo.addEventListener("click", moverBoton);
+
+
 // Si le gustó
 botonSi.addEventListener("click", () => {
     window.location.href = "https://youtu.be/s62trykMZGg?si=ApMarI3mZX7ui6xq&t=52";
 });
-
-// Hacemos que el botón "No me gustó" huya
-botonNo.addEventListener("mouseover", moverBoton);
-botonNo.addEventListener("click", moverBoton);
 
 function moverBoton(){
 

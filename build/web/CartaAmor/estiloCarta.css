@@ -293,3 +293,31 @@ button {
     }
 
 }
+
+@media (max-width: 600px) {
+
+    .botones {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #no {
+        order: 1;
+    }
+
+    #si {
+        order: 2;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+        padding: 14px 20px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+}
